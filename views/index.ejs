@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>  
+  <body>  
+    <header>Mongo Movies</header>
+    
+    <nav>
+
+      <p> | </p>
+
+      <a href="./new">
+        <p class="btn"> New movie </p>
+      </a>
+
+      <p> | </p>
+
+      <a href="">
+        <p class="btn">Abount</p>
+      </a>
+
+      <p> | </p>
+
+    </nav>
+    
+
+    <ul id="layout-index">
+      <% lists.forEach(function(movie) { %>
+
+        <li>
+          <h2>
+            <img id= "imagem-index" alt="imagem do filme" src="<%=movie.imagem%>" />
+            <a id="name" href="./view/<%=movie._id %>">
+              <%= movie.titulo %>
+            </a>
+          </h2>
+
+        </li>
+
+    <%  }); %>
+    </ul>
+  </body>
+  
+</html>

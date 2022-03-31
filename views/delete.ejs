@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title %></title>
+</head>
+<body>
+
+    <header>Mongo Movies</header>
+    
+    <nav>
+
+      <p> | </p>
+
+      <a href="../">
+        <p class="btn"> Home </p>
+      </a>
+
+      <p> | </p>
+
+      <a href="../view/<%=list._id %>">
+        <p class="btn"> Informações </p>
+      </a>      
+
+      <p> | </p>
+
+      <a href="">
+        <p class="btn">Abount</p>
+      </a>
+
+      <p> | </p>
+
+    </nav>
+
+    <form action="<%= action %>" method="POST">           
+        <p>Titulo:<input type="text" name="titulo" value="<%= list.titulo %>" placeholder="<%= list.titulo" %> /></p>
+        <p>Sinopse:<input type="text" name="sinopse" value="<%= list.sinopse %>" placeholder="list.sinopse" %> /></p>
+        <p>Duração:<input type="number" name="duracao" value="<%= list.duracao %>" placeholder="list.duracao" %> /></p>
+        <p>Data Lançamento:<input type="text" name="dataLancamento" value="<%= list.dataLancamento %>" placeholder="list.dataLancamento" %> /></p>
+        <input type="image"  name="imagem" value="<%= list.imagem %>" />
+        <p>Categorias:<input type="text" name="categorias" value="<%=list.categorias %>" placeholder="list.categorias" %></p>
+        <input type="submit" value="Salvar" />
+    </form>
+
+    
+</body>
+</html>

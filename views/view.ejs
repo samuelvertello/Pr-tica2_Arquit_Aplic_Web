@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+  <body>
+    <header>Mongo Movies</header>
+    
+    <nav>
+
+      <p> | </p>
+
+      <a href="../">
+        <p class="btn"> Home </p>
+      </a>
+
+      <p> | </p>
+
+      <a href="../edit/<%=list._id %>">
+        <p class="btn"> Editar Filme </p>
+      </a>      
+
+      <p> | </p>
+
+      <a href="">
+        <p class="btn">Abount</p>
+      </a>
+
+      <p> | </p>
+
+    </nav>
+
+<ul>    
+    
+    <li id="filme">
+        <img id= "imagem" alt="imagem do filme" src="<%=list.imagem%>" />
+        <h2> <%=list.titulo%> </h2>               
+    </li>    
+    
+    <li>
+        <p>Duração: <%=list.duracao%> </p>
+        <P> minutos</P>
+            
+    </li>
+    <li>
+        <p>Data de lançamento: <%= list.dataLancamento %></p>
+    </li>
+    <li>
+        <p>Categoria: <%= list.categorias %></p>
+    </li>      
+    
+    <li>
+        <p>Sinopse: <%= list.sinopse %> </p>
+    </li>
+
+    <a href="../delete/<%=list._id %>">
+        
+        <button id="excluir-filme"> Excluir Filme </button>        
+        
+    </a>
+    
+
+</ul>
+
+
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+[{
+"titulo": "Os Vingadores: Guerra Infinita",
+"sinopse": "Os heróis mais poderosos da Marvel enfrentando o Thanos",
+"duracao": 120,
+"dataLancamento": "2020-05-0T00:00:00Z",
+"imagem": "https://www.luiztools.com.br/vingadores-gi.jpg",
+"categorias": ["Aventura", "Ação"]
+},
+{
+"titulo": "Os Vingadores: Era de Ultron",
+"sinopse": "Os heróis mais poderosos da Marvel enfrentando o Ultron",
+"duracao": 110,
+"dataLancamento": "2016-05-01T00:00:00Z",
+"imagem": "https://www.luiztools.com.br/vingadores-eu.jpg",
+"categorias": ["Aventura", "Ação"]
+},
+{
+"titulo": "Os Vingadores",
+"sinopse": "Os heróis mais poderosos da Marvel enfrentando o Loki",
+"duracao": 100,
+"dataLancamento": "2014-05-01T00:00:00Z",
+"imagem": "https://www.luiztools.com.br/vingadores.jpg",
+"categorias": ["Aventura", "Ação"]
+}]
+
