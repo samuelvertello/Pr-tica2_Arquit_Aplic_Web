@@ -37,12 +37,12 @@
     </nav>
 
     <form action="<%= action %>" method="POST">           
-        <p>Titulo:<input type="text" name="titulo" value="<%= list.titulo %>" placeholder="<%= list.titulo %>" /></p>        
-        <p>Duração:<input type="number" name="duracao" value="<%= list.duracao %>" placeholder="<%=list.duracao %>"  /></p>
-        <p>Data Lançamento:<input type="date" name="dataLancamento" value="<%= list.dataLancamento %>" placeholder="<%=list.dataLancamento %>" /></p>
-        <p>Categorias<input type="text" name="categorias" value="<%=list.categorias %>" placeholder="<%list.duracao %>" /></p>
-        <p>Imagem<input type="url" name="imagem" placeholder="<%=list.imagem%>" /></p>
-        <p>Sinopse<textarea name = "sinopse" value="<%= list.sinopse%>" placeholder="<%=list.sinopse%>"  required></textarea></p>
+        <p>Titulo:<input type="text" name="titulo" value="<%= list.titulo %>" /></p>        
+        <p>Duração:<input type="number" name="duracao" value="<%= list.duracao %>"/></p>
+        <p>Data Lançamento:<input type="date" name="dataLancamento" value="<%= list.dataLancamento %>" /></p>
+        <p>Categorias<input type="text" name="categorias" value="<%=list.categorias %>" /></p>
+        <p>Imagem<input type="url" name="imagem" value="<%=list.imagem%>" /></p>
+        <p>Sinopse<textarea name = "sinopse" value="<%= list.sinopse%>"><%=list.sinopse%></textarea></p>
         <input type="submit" value="Salvar" />
     </form>
 
