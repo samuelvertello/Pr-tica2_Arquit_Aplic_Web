@@ -111,11 +111,19 @@ form > p {
     height: 30px;
     border-radius: 10px;
     margin: 40px;
-    border-color:red;    
+    border-color:  red;  
+    border: 0.7px solid;
+    color: red;  
     justify-content: center;
     align-items: center;
     justify-items: center;
 }
+#excluir-filme:hover {
+  border: none;
+  background-color: red;
+  color: white;
+}
+
 #imagem-index{
   height: 200px;
   width: 150px;
